@@ -1,6 +1,6 @@
 import { BaseSeeder } from '@adonisjs/lucid/seeders'
 import Post from '#models/post'
-import { title } from 'node:process'
+
 export default class extends BaseSeeder {
   async run() {
     // Write your database queries inside the run method

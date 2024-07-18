@@ -11,12 +11,15 @@
     <header>
         <ul>
             <li><a href={{route('home')}}>Home</a></li>
+            <li><a href='posts'>Posts</a></li>
         </ul>
     </header>
   <h1> {{title}} </h1>
   @each(post in posts)
-    <p>{{post.title}}</p>
+    <h3>{{post.title}}</h3>
     <img src={{post.imageUrl}} alt="image">
+    <p>{{post.description}}</p>
+    <p>{{post.slug}}</p>
   @end
 </body>
 </html>
