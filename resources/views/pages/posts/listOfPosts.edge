@@ -1,0 +1,10 @@
+@include('pages/posts/partials/header')
+
+  <h1> {{title}} </h1>
+   <ul>
+        @each(slug in slugs)
+            <li>{{ slug.slug }}</li>
+        @endeach
+    </ul>
+
+@include('pages/posts/partials/footer')

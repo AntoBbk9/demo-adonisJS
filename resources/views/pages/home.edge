@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> AdonisJS - A fully featured web framework for Node.js </title>
-
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-      <header>
-        <ul>
-            <li><a href={{route('home')}}>Home</a></li>
-            <li><a href='posts'>Posts</a></li>
-        </ul>
-    </header>
+@include('pages/posts/partials/header')
 
   <h1> It Works Again again! </h1>
-</body>
-</html>
+
+@include('pages/posts/partials/footer')
